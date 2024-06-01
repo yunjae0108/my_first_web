@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="utf-8">
+        <style>
+            body{
+                display: flex;
+                box-sizing: border-box;
+            }
+            #Box1{
+                border: 1px solid gray;
+                background-color: cornflowerblue;
+                width: 50vw;
+                margin: 10px;
+                height: 50vh;
+                position: absolute;
+                z-index: 1;
+            }
+            #Box2{
+                border: 1px solid gray;
+                background-color: burlywood;
+                margin: 10px;
+                width: 30vw;
+                height: 30vh;
+                position: relative;
+                bottom: 10px;
+                z-index: 2;
+            }
+        </style>
+    </head>
+    <body>
+        <div id="Box1">
+            Box1
+        </div>
+        <div id="Box2">
+        Box2
+        </div>
+    </body>
+</html>

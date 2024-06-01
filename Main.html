@@ -1,0 +1,141 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Juwon ┃ Malan Bolsal</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Kanit:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap" rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Caveat:wght@400..700&family=Kanit:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap" rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Shadows+Into+Light&display=swap" rel="stylesheet">
+    <style>
+        html, body{
+            margin: 0px;
+            padding: 0px;
+            background-color: #f5f3f4;
+        }
+        #Logo{
+            height: 75px;
+            position: fixed;
+            left: 10px;
+            top: 3px;
+            object-fit: cover;
+        }
+        header{
+            display: flex;
+            height: 60px;
+            justify-content: center;
+            align-items: center;
+            font-family: "Kanit", sans-serif;
+            font-weight: 600;
+            font-style: normal;
+            font-size: 2vmin;
+        }
+        .head_link{
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            gap: 4vw;
+            margin-top: 20px;
+        }
+        .section1{
+            background-image: url(img/Brooklyn_Cover.png);
+            height: 1100px;
+            z-index: -1;
+        }
+        .section2{
+            height: 1100px;
+            position: relative;
+            font-family: "Shadows Into Light", cursive;
+            font-weight: 400;
+            font-style: normal;
+        }
+        .section3{
+            background-image: url(img/Met_cover.png);
+            height: 1100px;
+        }
+        #Main_text{
+            position: absolute;
+            left: 20vw;
+            top: 40vh;
+            font-family: "Caveat", cursive;
+            font-optical-sizing: auto;
+            font-weight: 800;
+            font-style: normal;
+            font-size: 8vw;
+            color: #edf2fb;
+            line-height: 15vh;
+            /* color: #99582a; */
+            z-index: 2;
+        }
+        #whitebox{
+            background-color: black;
+            position: absolute;
+            top: 40vh;
+            width: 60vw;
+            height: 500px;
+            z-index: 1;
+            opacity: 0.4;
+        }
+        #section2_img{
+            position: absolute;
+            height: 800px;
+            top: 150px;
+            left: 10vw;
+        }
+        #section2_title{
+            font-size: 3vw;
+            font-weight: bold;
+        }
+        #section2_text{
+            display: inline-block;
+            position: absolute;
+            right: 12vw;
+            top: 150px;
+            width: 700px;
+            height: 800px;
+            /* border: 1px solid gray; */
+            padding: 15px;
+            box-sizing: border-box;
+            opacity: 0;
+        }
+        #section2_img:hover ~ #section2_text{
+            opacity: 1;
+            transition: 3s;
+        }
+    </style>
+</head>
+<body>
+    <div class="section1">
+        <header>
+            <img id="Logo" src="img/Logo_Black.png">
+            <div class="head_link">
+                <div>About</div>
+                <div>Best Photos</div>
+                <div>Trips</div>
+            </div>
+        </header>
+        <div id="Main_text">
+            The story of <br>Juwon and Yunjae
+        </div>
+        <div id="whitebox"></div>
+    </div>
+    <div class="section2">
+        <img id="section2_img" src="img/First_Hoboken.jpg">
+        <div id="section2_text">
+            <p id="section2_title">June 11th, 2022<br>First Hoboken Together</p>
+            "The day we went to Hoboken together for the first time.<br>
+            
+        </div>
+    </div>
+    <div class="section3">
+    </div>
+    <div class="section4">
+    </div>
+</body>
+</html>
